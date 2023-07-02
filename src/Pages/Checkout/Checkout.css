@@ -1,0 +1,103 @@
+.checkout-container{
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    min-height: calc(100% - 120px);
+    margin: 60px auto;
+}
+
+.checkout-section-container{
+    display: flex;
+    border-bottom: solid 2px rgba(217, 217, 217, 0.60);;
+}
+
+.checkout-field-title{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-section-container :nth-child(1){
+    flex:3 3 0;
+}
+.checkout-section-container :nth-child(2){
+    flex:5 5 0;
+}
+.checkout-section-container :nth-child(n+3):nth-child(-n+5){
+    width: 15%;
+}
+
+.empty-message{
+    display: flex;
+    height: calc(100vh - 260px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.purchase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding:20px;
+    gap: 20px;
+}
+.total-container{
+    display: flex;
+    gap:60px;
+}
+
+.return-btn{
+    background-color: var(--light-purple);
+    color:white;
+}
+
+.modal-style{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+    padding:120px 60px;
+    width:calc(100vw - 120px);
+    max-width: 700px;
+    left:50%;
+    top:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+}
+
+
+ @media (max-width:680px) {
+    .checkout-field-title{
+        display: none;
+    }
+    .checkout-section-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        gap:5px;
+    }
+    .checkout-section-container :nth-child(n+1):nth-child(-n+2){
+        flex: 0 1 auto;
+    }
+    .checkout-section-container :nth-child(5){
+        position: absolute;
+        bottom: 20px;
+        right:0;
+    }
+}
+
+@media (max-width:480px) {
+    .modal-style{
+        padding:60px 30px;
+        width:calc(100vw - 30px);
+    }
+    .modal-style h3{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding:0 30px;
+}
+
+.logo{
+    color: var(--dark-purple);
+}
+
+@media (max-width:740px) {
+    header{
+        padding:0 15px;
+    }
+}

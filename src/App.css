@@ -1,5 +1,92 @@
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* CSS Reset & Global Rules */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  --dark-purple: #3A4895;
+  --light-purple: #5264C3;
+}
+body{
+  background-color: #FAFAFA;
+}
+main{
+  height: calc(100vh - 140px);
+  padding: 0 120px;
+  overflow-y: auto;
+}
+a {
+  text-decoration: none;
+}
+.clickable:hover{
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ABAEB1;
+  border-radius: 18px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/*Typeface font sizes and weight classes*/
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+.p12 {
+  font-size: 12px;
+}
+.p10 {
+  font-size: 10px;
+}
+.w700 {
+  font-weight: 700;
+}
+.w600 {
+  font-weight: 600;
+}
+.w400 {
+  font-weight: 400;
+}
+.grey-txt{
+  color: #949494;
+}
+
+/* Buttons */
+button{
+  border: none;
+  background-color: #FFD814;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px
+}
+
+@media(max-width:900px){
+  main{
+    padding: 0 60px;
+  }
+}
+@media(max-width:580px){
+  main{
+    padding: 0 30px;
+  }
+}
+@media(max-width:350px){
+  main{
+    padding: 0 15px;
+  }
 }
